@@ -1,0 +1,32 @@
+Please see information below and pass along to your candidate(s). Please check with your candidate that they will be available for 90 minutes to complete. Once the test question is sent please forward the time stamp. Any responses surpassing the 90 minute mark will be disqualified. If you have any questions please let me know.
+___________________________________________________________________________
+ 
+The candidates should be able to deliver a reasonable solution to this in 90 minutes:
+ 
+You are tasked with implementing two API endpoints for a newspaper to track the most popular articles. You can think of your API end points being called from an event loop that listens to http requests. You can use any programming language of your choice to solve the problem. This problem tests programming fundamentals and not any particular language or technology. The data structure will only persist as long as the event loop keeps going. 
+ 
+Writes can be slow, but reads should be very fast. Optimize your data structure for quick reads. The granularity of detail required is 1 minute. Aggregate article hits into 1 minute blocks. 
+ 
+First, discuss the data structure you will use and talk about the code you plan to write. Then implement the following functions:
+ 
+// Your data structure
+var articleData = //?? Up to you. Remember fast reads are the goal
+ 
+// And optional utility function that is called every minute by the event loop. You can use it if it makes sense in your solution.
+function onNewMinute() {
+            
+}
+ 
+// This first api endpoint is used to track an article hit. It takes articleId as the only parameter and should record the hit at the time it is called. 
+function trackArticleHit(articleId) {
+            
+}
+ 
+// This second api endpoint is used to retrieve the list of most popular article ids. 
+// It should look at the last 5 minutes (less only if there are fewer minutes in the data structure)
+// It should return up to 10 articles (less only if there were fewer articles read in the last 5 minutes)
+function getMostPopularArticles() {
+ 
+}
+
+ 
